@@ -11,13 +11,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/modal_window.css">
 	<script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.paulund_modal_box.js"></script>
+    <script src="js/jquery.paulund_modal_box.js"></script
+	
+	
+	
+	
+	
 </head>
 <body>
- <p>Две кнопки открывающие одно и тоже модальное окно:</p>
-  <button class="btn" data-toggle="modal">Кнопка 1</button>
-  <button class="btn" data-toggle="modal">Кнопка 2</button>
-
+ 
 <header>
 <div class="header">
 		<div class="img"></div>
@@ -26,17 +28,42 @@
 						<a href="index.html" title="Главная">Главная</a>
 						<a href="radio_shop.html" title="Магазин">Магазин</a>
 						<a href="contact.html" title="Контакты">Контакты</a>
+						
+
+
 						<a href="mailto:proftpd@mail.ru?subject=Компютерная диагностика&amp;body=Вопрос по компьютерной диагностике автомобиля ...&amp;" title="Отправить письмо на почту Петрову Роману">Написать</a>
 				
 				</nav>
 		</div>
 </div>
+
+
+<!--   JQUERY             *************************************  -->
+<div class="window">
+<a href="#dialog_1" name="modal">Вызов модального окна</a>
+
+<!-- Само окно -->
+<div id="boxes">  
+<div id="dialog_1" class="window"> Текст модального окна
+<div class="top"><a href="#" class="link close"/>Закрыть</a></div>
+<div class="content">Привет МИР!!!</div>
+</div>
+</div>
+</div>
+
+
+<div id="mask"></div>
+
+<!--   *************************************                 -->
+
+
+  
 </header>
 
 <!-- MAIN  -->
 <main>
   <div class="block">
-  
+
   <!-- BLOCK 1 -->
   
 			<aside>
@@ -68,6 +95,10 @@
 			</aside>
 	</div>
 	
+
+
+
+
 	<div class="block_2" itemscope itemtype="//schema.org/Article">
 	      <div class="container">
 		  <!-- CONTAINER 1-->	

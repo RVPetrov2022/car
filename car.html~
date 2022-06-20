@@ -7,11 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Компьютерная диагностика автомобиля Москва, Проспект Вернадского</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+     <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal_window.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.paulund_modal_box.js"></script
+	
+	
+	
+	
+	
 </head>
 <body>
-<head>
+ 
+<header>
 <div class="header">
 		<div class="img"></div>
 		<div class="link">
@@ -19,17 +28,42 @@
 						<a href="index.html" title="Главная">Главная</a>
 						<a href="radio_shop.html" title="Магазин">Магазин</a>
 						<a href="contact.html" title="Контакты">Контакты</a>
-						<a  <a href="mailto:proftpd@mail.ru?subject=Компютерная диагностика&amp;body=Вопрос по компьютерной диагностике автомобиля ...&amp;" title="Отправить письмо на почту Петрову Роману">Написать</a>
+						
+
+
+						<a href="mailto:proftpd@mail.ru?subject=Компютерная диагностика&amp;body=Вопрос по компьютерной диагностике автомобиля ...&amp;" title="Отправить письмо на почту Петрову Роману">Написать</a>
 				
 				</nav>
 		</div>
 </div>
-</head>
+
+
+<!--   JQUERY             *************************************  -->
+<div class="window">
+<a href="#dialog_1" name="modal">Вызов модального окна</a>
+
+<!-- Само окно -->
+<div id="boxes">  
+<div id="dialog_1" class="window"> Текст модального окна
+<div class="top"><a href="#" class="link close"/>Закрыть</a></div>
+<div class="content">Привет МИР!.</div>
+</div>
+</div>
+</div>
+
+
+<div id="mask"></div>
+
+<!--   *************************************                 -->
+
+
+  
+</header>
 
 <!-- MAIN  -->
 <main>
   <div class="block">
-  
+
   <!-- BLOCK 1 -->
   
 			<aside>
@@ -61,31 +95,35 @@
 			</aside>
 	</div>
 	
-	<div class="block_2">
+
+
+
+
+	<div class="block_2" itemscope itemtype="//schema.org/Article">
 	      <div class="container">
 		  <!-- CONTAINER 1-->	
-					<div> <a href ="https://youtu.be/rYZiSt75zDw" title="Смотреть видео на канале Youtube" ><img src="img/airbagjpg.jpg" width="200" height="150" alt="Диагностика блока подушек безопасности"></a></div>
-					<div><h3>AirBag</h3></div>
+					<div> <meta itemprop="name" content="Диагностика блока подушек безопасности"><a href ="https://youtu.be/rYZiSt75zDw" title="Смотреть видео на канале Youtube" ><img src="img/airbagjpg.jpg" width="200" height="150" alt="Диагностика блока подушек безопасности"></a></div>
+					<div><h3 itemprop="description">AirBag</h3></div>
 					<div>
-							<p>Разбираюсь в причине неисправности подушки безопасности.Сопротивление пиропатронов блок видит, но при включении выдает ошибку неисправности памяти.‏</p>
+							<p itemprop="description">Разбираюсь в причине неисправности подушки безопасности.Сопротивление пиропатронов блок видит, но при включении выдает ошибку неисправности памяти.‏</p>
 					</div>
 		  
 		  </div>
 	<!-- CONTAINER 2 -->			
 	 <div class="container">
-					<div> <a href="https://youtu.be/03KuYLQexXo" target="_blank" title="Смотреть видео на канале Youtube"><img src="img/knorr-brese.jpg" width="200" height="150" alt="Knorr-Bremse тележный модулятор"></a></div>
+					<div> <meta itemprop="name" content="Ремонт Knorr-Bremse тележного модулятора"><a href="https://youtu.be/03KuYLQexXo" target="_blank" title="Смотреть видео на канале Youtube"><img src="img/knorr-brese.jpg" width="200" height="150" alt="Knorr-Bremse тележный модулятор"></a></div>
 					<div><h3>Knorr-Bremse</h3></div>
 					<div>
-							<p>Ремонт тележного модулятора Knorr-Brese грузового автомобиля.</p>
+							<p itemprop="description">Ремонт тележного модулятора Knorr-Brese грузового автомобиля.</p>
 					</div>
 		  
 		  </div>
 		<!-- CONTAINER 3 -->	  
 		   <div class="container">
-					<div> <a href ="" title="Смотреть видео на канале Youtube" >FOTO</a></div>
-					<div><h3>TEXT</h3></div>
+					<div> <meta itemprop="name" content="Разработка адаптивного освещения для автомобиля"> <a href="https://youtu.be/vbZ4uDqQ3jY" target="_blank" title="Смотреть видео на канале Youtube"><img src="img/adaptive_light.jpg" width="200" height="150" alt="Разработка адаптивного освещения для автомобиля"></a></div>
+					<div><h3>Адаптивный свет</h3></div>
 					<div>
-							<p>TEXT</p>
+							<p itemprop="description">Рахработка адаптивного освещения для автомобиля на микроконтроллере AVR</p>
 					</div>
 		  
 		  </div>
@@ -99,7 +137,7 @@
 	 <!-- MAP -->
 	 <div class="map">
 					<div itemscope itemtype="//schema.org/Organization">
-							Ваш автомобиль вы можете поставить на парковку рядом с домом по адресу <span itemprop="streetAddress">г. Москва, ул. Проспект Вернадского, д.66а. </span>
+							Ваш автомобиль вы можете поставить на парковку рядом с домом по адресу <span itemprop="streetAddress">г. Москва, ул. Лобачевского, д.66а. </span>
 					</div>
 		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8aae39841b6a3b3fd4fe6f490cfd746beaedeccd81025e039bee01b64cd351f&amp;source=constructor" width="400" height="330" frameborder="0"></iframe>
 	 </div>
@@ -108,12 +146,13 @@
 </main>
 <footer>
 	<div class="footer">
+	       
 			<aside itemscope itemtype="//schema.org/Organization">
-					@ 2022 PROFTPD Petrov Roman, <a href="mailto:proftpd@mail.ru?subject=Компютерная диагностика&amp;body=Вопрос по компьютерной диагностике автомобиля ...&amp;" title="Отправить письмо на почту Петрову Роману">  <span itemprop="email">proftpd@mail.ru	</span></a>
-			</aside>
-			<aside>
+			<div class="img"></div>
+			<div class="copyrite">@ 2022 PROFTPD Petrov Roman, <a href="mailto:proftpd@mail.ru?subject=Компютерная диагностика&amp;body=Вопрос по компьютерной диагностике автомобиля ...&amp;" title="Отправить письмо на почту Петрову Роману">  <span itemprop="email">proftpd@mail.ru	</span></a></div>
+			<div class="button">
 				<a target="_blank" class="mrc__plugin_like_button" href="https://connect.mail.ru/share" data-mrc-config="{'cm' : '3', 'sz' : '30', 'st' : '1', 'tp' : 'mm'}">Нравится</a>
-				<script src="https://connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>	
+				<script src="https://connect.mail.ru/js/loader.js" type="text/javascript" charset="UTF-8"></script>	</div>
 			</aside>
 </div>
 </footer>
