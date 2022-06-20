@@ -9,8 +9,8 @@
     <title>Компьютерная диагностика автомобиля Москва, Проспект Вернадского</title>
      <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/modal_window.css"
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/modal_window.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.paulund_modal_box.js"></script>
 </head>
 <body>
